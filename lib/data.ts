@@ -369,6 +369,26 @@ export const resourceLinks: LinkGroup[] = [
       },
     ],
   },
+  {
+    title: "Workshop List",
+    links: [
+      { name: "Workshop List", href: "https://lu.ma/embed/calendar/cal-kQLf8Lts3EySj28/events" },
+    ],
+  },
+  {
+    title: "See your QR Code",
+    links: [
+      { name: "See your QR Code", href: "https://portal.deanzahacks.com" },
+    ],
+  },
+  {
+    title: "Judging List",
+    links: [
+      { name: "Judging List", href: "https://dahacks3-5.devpost.com/#judges" },
+    ],
+  },
+  
+
 ]
 
 export const navbarData = {
@@ -401,3 +421,6 @@ export const navbarData = {
 }
 
 export default hackathonData
+
+
+
