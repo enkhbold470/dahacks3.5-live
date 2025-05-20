@@ -17,13 +17,13 @@ export const hackathonData = {
     {
       name: "Education",
       description:
-        "Create innovative solutions to improve learning experiences and educational outcomes for students of all ages.",
+        "Build AI agents that can help students learn, AI tutors, creative learning tools, etc.",
       icon: "📚",
     },
     {
       name: "Finance",
       description:
-        "Build tools and platforms that make financial services more accessible, understandable, and efficient.",
+        "Build AI tools and platforms that make financial services more accessible, understandable, and efficient, utilizing AI agents, use blockchain, etc.",
       icon: "💰",
     },
   ],
@@ -326,7 +326,7 @@ export const resourceLinks: LinkGroup[] = [
   {
     title: "Devpost",
     links: [
-      { name: "DAHACKS V2.0", href: "https://dahacks25.devpost.com" },
+      { name: "DAHACKS V2.0", href: "https://de-anza-hacks-2023.devpost.com" },
       { name: "DAHACKS V2.5", href: "https://dahacks25.devpost.com" },
       { name: "DAHACKS V3.0", href: "https://dahacks3.devpost.com" },
       { name: "DAHACKS V3.5", href: "https://dahacks3-5.devpost.com" },
