@@ -1,3 +1,4 @@
+import Image from "next/image"
 export default function SchedulePage() {
   return (
     <div className="py-8">
@@ -11,6 +12,14 @@ export default function SchedulePage() {
           scrolling="no"
         ></iframe>
       </div>
+      <div className="flex flex-col items-center justify-center gap-4 mt-8">
+        <p className="text-center text-lg">
+         Scan to save to your calendar
+        </p>
+
+        <Image src="/dahacks3.5-calendar.png" alt="QR Code" width={200} height={200} />
+      </div>
+
     </div>
   )
 }
