@@ -6,6 +6,7 @@ export default function ResourcesPage() {
       <h1 className="text-3xl font-bold mb-8">Resources</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
         <ResourceCard
           title="Hacker Guide"
           description="Everything you need to know about the hackathon"
@@ -16,12 +17,12 @@ export default function ResourcesPage() {
         <ResourceCard
           title="Workshop List"
           description="Check out all the workshops available during the event"
-          link="#"
+          link="https://lu.ma/embed/calendar/cal-kQLf8Lts3EySj28/events"
           linkText="Go to the Workshop List"
         />
 
         <ResourceCard
-          title="QR Code"
+          title="See your QR Code"
           description="Access your personal QR code for check-in and more"
           link="https://portal.deanzahacks.com"
           linkText="Go check my QR code"
@@ -30,7 +31,7 @@ export default function ResourcesPage() {
         <ResourceCard
           title="Judging List"
           description="Information about judging criteria and process"
-          link="https://dahacks3-5.devpost.com"
+          link="https://dahacks3-5.devpost.com/#judges"
           linkText="Go to Judging List"
         />
       </div>

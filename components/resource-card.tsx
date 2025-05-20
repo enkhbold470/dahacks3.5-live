@@ -1,7 +1,5 @@
-import Link from "next/link"
 import { Card, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ExternalLink } from "lucide-react"
+import Link from "next/link"
 
 interface ResourceCardProps {
   title: string
@@ -12,18 +10,26 @@ interface ResourceCardProps {
 
 export default function ResourceCard({ title, description, link, linkText }: ResourceCardProps) {
   return (
-    <Card className="bg-[#1a1a3a] border-[#2a2a4a]">
-      <CardHeader>
-        <CardTitle>{title}</CardTitle>
-        {description && <CardDescription>{description}</CardDescription>}
-      </CardHeader>
-      <CardFooter>
-        <Button asChild className="w-full">
-          <Link href={link} target="_blank" rel="noopener noreferrer">
-            {linkText} <ExternalLink className="ml-2 h-4 w-4" />
-          </Link>
-        </Button>
-      </CardFooter>
-    </Card>
+    <Link href={link} target="_blank" rel="noopener noreferrer">
+      <Card className="bg-[#1a1a3a] border-[#2a2a4a] cursor-pointer">
+        <CardHeader>
+          <CardTitle>{title}</CardTitle>
+          {description && <CardDescription>{description}</CardDescription>}
+        </CardHeader>
+        <div className="w-full h-48 relative">
+          <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${link})` }}></div>
+          <iframe
+            className="w-full h-full border-none"
+            src={`${link}?embed=true`} // Ensures desktop view embedding
+            title={title}
+            allowFullScreen
+            scrolling="no"
+          ></iframe>
+        </div>
+        <CardFooter>
+          <span className="w-full text-center">{linkText}</span> {/* Non-clickable text */}
+        </CardFooter>
+      </Card>
+    </Link>
   )
 }
