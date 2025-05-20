@@ -4,7 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import Navbar from "@/components/navbar"
 import { ThemeProvider } from "@/components/theme-provider"
-
+import { Analytics } from "@vercel/analytics/next"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
@@ -26,6 +26,7 @@ export default function RootLayout({
           <main className="container mx-auto px-4 pt-20">{children}</main>
         </ThemeProvider>
       </body>
+      <Analytics />
     </html>
   )
 }
