@@ -58,29 +58,37 @@
   }
 }
 
-.countdown-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  font-size: 3rem;
-  font-weight: bold;
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  main {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+  
+  /* Ensure content doesn't overlap with bottom navigation */
+  body {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
 }
 
-.countdown-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* PWA specific styles */
+@media (display-mode: standalone) {
+  /* Hide address bar in PWA mode */
+  body {
+    padding-top: env(safe-area-inset-top);
+  }
 }
 
-.countdown-value {
-  font-size: 5rem;
-  line-height: 1;
-}
-
-.countdown-label {
-  font-size: 0.875rem;
-  text-align: center;
+/* Digital display styling for countdown */
+.font-orbitron {
+  font-feature-settings: 'tnum' 1; /* Tabular numbers for consistent width */
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
 }
 
 .bubble {

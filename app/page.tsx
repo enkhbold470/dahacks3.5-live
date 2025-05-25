@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { hackathonData, hackathonEndTime } from "@/lib/data"
+import { hackathonData, hackathonEndTime, hackathonStartTime } from "@/lib/data"
 import Countdown from "@/components/countdown"
 import SocialLinks from "@/components/social-links"
 import EventList from "@/components/event-list"
@@ -12,21 +12,19 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen pb-16">
-      <DecorativeElements />
+      {/* <DecorativeElements /> */}
+      <Countdown targetDate={hackathonEndTime} startDate={hackathonStartTime} className="w-full"/>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-8">
-        <div className="space-y-8">
-          <h1 className="text-7xl font-bold tracking-tighter">DA HACKS</h1>
+    
+      <div className="space-y-8">
 
           <SocialLinks />
-
           <EventList />
         </div>
-
         <div className="flex flex-col items-center justify-center">
-          <Countdown targetDate={hackathonEndTime} className="w-full"/>
 
-          <div className="mt-12 relative w-full max-w-md">
+          <div className="relative w-full max-w-md hidden lg:block">
             <Image
               src="https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/003/413/942/datas/full_width.png"
               alt="Hackathon Mascot"
@@ -36,6 +34,7 @@ export default function Home() {
             />
           </div>
         </div>
+    
       </div>
 
       <div className="mt-12 text-center">
@@ -44,10 +43,6 @@ export default function Home() {
             <Image src={sponsor.logo} alt="Sponsors" width={200} height={200}  />
           ))}
         </div> */}
-
-        <p className="mt-4 text-gray-300">
-          Event Date: {hackathonData.date} • Event Venue: {hackathonData.venue}
-        </p>
       </div>
     </div>
   )
