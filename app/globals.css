@@ -91,6 +91,26 @@
   text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
 }
 
+/* PWA Install Prompt Animations */
+@keyframes slide-in-from-bottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-in {
+  animation-fill-mode: both;
+}
+
+.slide-in-from-bottom-4 {
+  animation: slide-in-from-bottom 0.3s ease-out;
+}
+
 .bubble {
   position: absolute;
   border-radius: 50%;
