@@ -4,6 +4,7 @@ import { Inter, Orbitron } from "next/font/google"
 import "./globals.css"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import PWAInstallPrompt from "@/components/pwa-install-prompt"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Analytics } from "@vercel/analytics/next"
 
@@ -40,6 +41,7 @@ export default function RootLayout({
           <Navbar />
           <main className="container mx-auto px-4 pt-20 pb-20 md:pb-0">{children}</main>
           <Footer />
+          <PWAInstallPrompt />
         </ThemeProvider>
       </body>
       <Analytics />
