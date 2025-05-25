@@ -1,5 +1,6 @@
+export const hackathonStartTime = "2025-05-30T09:00:00" // 9:00 AM on May 30, 2025 (hacking start time)
 export const hackathonEndTime = "2025-05-30T18:00:00" // 6:00 PM on May 30, 2025 (hacking end time)
-
+export const workshopLink = "https://lu.ma/embed/calendar/cal-kQLf8Lts3EySj28/events"
 export const hackathonData = {
   name: "DAHacks 3.5",
   shortName: "DAHacks 3.5",
@@ -8,7 +9,7 @@ export const hackathonData = {
   venue: "Conference Room A&B, De Anza College, Cupertino, CA 95014",
   logo: "/logo.png",
   applyLink: "https://portal.deanzahacks.com",
-  guideLink: "https://docs.google.com/document/d/1nPCcuwV26MNHjhbXRchJRCsknjEcwmzjXn4xmu1o5i4",
+  guideLink: "https://docs.google.com/document/d/e/2PACX-1vRLvQ9lL8Tskw6zl8nANJvjYWHKxegnShuCmpNeAkAR-C_hQbrpEoYwtNbCgwGg7FxxFzpd5ynBHh7U/pub",
 
   description:
     "DAHacks 3.5 is a one-day coding marathon. Our goal is to see the most innovative, cutting-edge, and creative projects possible, while keeping the hackathon beginner-friendly for all skill levels. Tracks are NOT required—any project you build can win the top overall prizes! Specific themes/tracks are NOT revealed yet, but any innovative, cutting-edge, creative projects are acceptable. If you choose to submit your project to a track, you'll also be eligible for track-specific prizes. So whether you follow a track or blaze your own trail, you have a shot at winning!",
@@ -31,9 +32,9 @@ export const hackathonData = {
   timeline: [
     {
       name: "This is a test event before the hackathon",
-      date: "2025-05-20",
-      startTime: "02:00 AM",
-      endTime: "11:00 AM",
+      date: "2025-05-25",
+      startTime: "06:00",
+      endTime: "23:00",
       description:
         "This is a test event before the hackathon, usually ongoing events will appear here example: hackathons, workshops, etc. ",
     },
@@ -400,14 +401,6 @@ export const navbarData = {
     {
       name: "SCHEDULE",
       href: "/schedule",
-    },
-    {
-      name: "TRACKS",
-      href: "/tracks",
-    },
-    {
-      name: "MAP",
-      href: "/map",
     },
     {
       name: "RESOURCES",

@@ -10,8 +10,8 @@ interface ResourceCardProps {
 
 export default function ResourceCard({ title, description, link, linkText }: ResourceCardProps) {
   return (
-    <Link href={link} target="_blank" rel="noopener noreferrer">
-      <Card className="bg-[#1a1a3a] border-[#2a2a4a] cursor-pointer">
+    <Link href={link} target="_blank" rel="noopener noreferrer" className="hover:scale-105 transition-all duration-300">
+      <Card className="bg-[#1a1a3a] border-[#2a2a4a] cursor-pointer drop-shadow-lg underline-offset-4 hover:underline">
         <CardHeader>
           <CardTitle>{title}</CardTitle>
           {description && <CardDescription>{description}</CardDescription>}
@@ -19,7 +19,7 @@ export default function ResourceCard({ title, description, link, linkText }: Res
         <div className="w-full h-48 relative">
           <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${link})` }}></div>
           <iframe
-            className="w-full h-full border-none"
+            className="w-full h-full border-none blur"
             src={`${link}?embed=true`} // Ensures desktop view embedding
             title={title}
             allowFullScreen
