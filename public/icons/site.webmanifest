@@ -1,10 +1,10 @@
 {
-  "name": "DAHacks 3.5 Live",
-  "short_name": "DAHacks 3.5 Live",
-  "description": "DAHacks 3.5 Live - De Anza College Hackathon",
+  "name": "DAHacks3.5 Live",
+  "short_name": "DAHacks3.5 Live",
+  "description": "DAHacks3.5 Live - De Anza College Hackathon",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0a1e",
+  "background_color": "#ffffff",
   "theme_color": "#6366f1",
   "orientation": "portrait-primary",
   "icons": [
