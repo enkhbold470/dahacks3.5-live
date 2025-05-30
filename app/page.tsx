@@ -26,7 +26,7 @@ export default function Home() {
 
           <div className="relative w-full max-w-md hidden lg:block">
             <Image
-              src="https://d112y698adiu2z.cloudfront.net/photos/production/challenge_photos/003/413/942/datas/full_width.png"
+              src="qrcode.webp"
               alt="Hackathon Mascot"
               width={400}
               height={300}
