@@ -71,7 +71,7 @@ export const hackathonData = {
       date: "2025-05-30",
       startTime: "12:00 PM",
       endTime: "12:30 PM",
-      description: "Mass order meal time (coordinate with Costco)",
+      description: "Meal Time at Cafeteria (Make sure to bring lanyard)",
     },
     {
       name: "Workshop #2 - Jumpstart Your Hackathon Project w/ Java",
